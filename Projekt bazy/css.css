@@ -1,0 +1,92 @@
+* {
+    margin: 0px;
+
+}
+
+body {
+    overflow: hidden;
+}
+
+.div1 {
+    background-color: bisque;
+    width: 100%;
+    text-align: center;
+    height: 10vh;
+    min-height: 50px;
+    font-size: 200%;
+}
+
+.menu {
+
+    padding:1% 3%;
+    background-color: rgb(208, 163, 104);
+    font-size: 150%;
+
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 5%;
+}
+
+
+.CreateUser {
+    /* position:fixed; */
+    background-color: rgb(49, 155, 76);
+    width: 40%;
+    height: 50vh;
+    left: 30%;
+    top:25vh;
+    min-height: 350px;
+    overflow-y: auto;
+    overflow-y: hidden;
+    margin-left: 30%;
+    margin-top: 5%;
+    display:none ;
+}
+
+
+.CreateUser form {
+    height: 40%;
+    display: grid;
+    grid-template-columns: repeat(5, 19%); 
+    grid-template-rows: repeat(4,20px);
+    margin-top: 20%;
+    padding: 0 5% 0 5%;
+    /* transform: translate(0%,-50%); */
+
+}
+
+.login, .email, .haslo {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    height: 100%;
+    max-height: 20px;
+    max-width: 300px;  
+}
+
+.CreateUser label {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.submit {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.clear {
+    grid-column-start: 4;
+    grid-column-end:5;
+}
+
+
+.menu li:hover {
+    cursor: pointer;
+}
+
+
+
+
