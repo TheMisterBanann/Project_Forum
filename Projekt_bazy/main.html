@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Document</title>
+</head>
+<body>
+
+<nav>
+        
+    <div class="div1">
+        <h1>Forum</h1>
+    </div>
+
+    <div class="menu">
+        <ul>
+            <li>Forum</li>
+            <li>Add Post</li>
+            <li class="CU_Button">Create User</li>
+            <li class="loginButton">login</li>
+            <h3>User</h3>
+        </ul>
+
+    </div>
+
+</nav>
+
+    <div class="CreateUser">
+        <form action="php.php" method="post">
+            <labe>Login</labe>          <input type="text" class="login" name="login" required> <br>
+            <label>Password</label>     <input type="password" class="haslo" name="password" required> <br>
+            <label>email</label>        <input type="email" class="email" name="email" required> <br>
+                                        <input type="submit" class="submit" name="submit" value="submit">
+                                        <input type="reset" class="clear" name="clear" value="clear">
+                                        <input type="button" class="close" name="close" value="close">
+        </form>
+
+    </div>
+
+
+    <div class="logindiv">
+        <form action="login.php" method="post">
+            <labe>email</labe>          <input type="email" class="email" name="email" required> <br>
+            <label>Password</label>     <input type="password" class="haslo" name="password" required> <br>
+                                        <input type="submit" class="lsubmit" name="submit" value="submit">
+                                        <input type="reset" class="lclear" name="clear" value="clear">
+                                        <input type="button" class="lclose" name="close" value="close">
+        </form>
+
+    </div>
+
+
+    <div class="createPost">
+            <form>
+                <textarea type="textarea" name="tytul" placeholder="tytul" class="tytul"> </textarea>
+                <textarea type="text" name="content" class="content" placeholder="do 500 znaków" maxlength="500"> </textarea>
+            </form>
+    </div>
+
+
+    
+
+    <script src="js.js"></script> 
+</body>
+</html>
